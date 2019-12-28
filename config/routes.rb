@@ -1,3 +1,7 @@
+require 'apartment/elevators/subdomain'
+
+
+
 Rails.application.routes.draw do
   constraints ExcludedSubdomainConstraint do
     resources :projects
