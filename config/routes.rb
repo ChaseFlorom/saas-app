@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
-  resources :projects
-  devise_for :users
-  get 'home/index'
-  root 'home#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  constraints ExcludedSubdomainConstraint do
+    resources :projects
+    devise_for :users
+    get 'home/index'
+    root 'home#index'    
+  end
+end
+
+
+class ExcludedSubdomainConstraint
+  def self.matches?(request)
+    request.subdomain.present? && !Apartment::Elevators::Subdomain.excluded_subdomains.include?(request.subdomain)
+  end
 end
