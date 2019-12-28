@@ -7,7 +7,10 @@ ruby '2.6.3'
 gem 'rails', '~> 6.0.1'
 
 gem 'devise'
+gem 'devise-bootstrap-views'
 gem 'apartment', github: 'influitive/apartment', branch: 'development'
+gem 'twitter-bootstrap-rails'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
