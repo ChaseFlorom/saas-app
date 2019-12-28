@@ -9,11 +9,9 @@ end
 
 
 Rails.application.routes.draw do
-  constraints ExcludedSubdomainConstraint do
     resources :projects
     devise_for :users
     get 'home/index'
     root 'home#index'
-  end
 end
 

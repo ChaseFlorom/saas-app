@@ -10,7 +10,8 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'apartment', github: 'influitive/apartment', branch: 'development'
 gem 'twitter-bootstrap-rails'
-
+gem 'jquery'
+gem 'jquery-rails'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
