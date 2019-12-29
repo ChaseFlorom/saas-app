@@ -14,7 +14,7 @@ require_relative "../../lib/last_subdomain_elevator"
 #
 Apartment.configure do |config|
   
-  Apartment::Elevators::Subdomain.excluded_subdomains = ['www']
+  #Apartment::Elevators::Subdomain.excluded_subdomains = ['www']
 
   # Add any models that you do not want to be multi-tenanted, but remain in the global (public) namespace.
   # A typical example would be a Customer or Tenant model that stores each Tenant's information.
