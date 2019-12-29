@@ -12,6 +12,6 @@ class User < ApplicationRecord
     puts subdomain
     puts email
     Apartment::Tenant.create(subdomain)
-    redirect to projects_path(subdomain: subdomain)
+    redirect to root(subdomain: subdomain)
   end
 end
