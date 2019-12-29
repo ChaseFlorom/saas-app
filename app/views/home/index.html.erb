@@ -1,5 +1,5 @@
 <% if current_user %>
-    <h3>Organization: <%= @tenant.name %></h3>
+    <h3>Organization: <%= Apartment::Tenant.current %></h3>
 <% else %>
     <div class="jumbotron">
         <h2>Welcome to the Project Management Application!</h2>
