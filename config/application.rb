@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 
 module SaasApp
   class Application < Rails::Application
-    Rails.application.config.middleware.use LastSubdomainElevator
+    #Rails.application.config.middleware.use LastSubdomainElevator
 
  
 
