@@ -1,12 +1,3 @@
-require 'apartment/elevators/subdomain'
-
-class ExcludedSubdomainConstraint
-  def self.matches?(request)
-    request.subdomain.present? && !Apartment::Elevators::Subdomain.excluded_subdomains.include?(request.subdomain)
-  end
-end
-
-
 
 Rails.application.routes.draw do
     resources :projects
